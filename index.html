@@ -11,8 +11,9 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-  <body>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <header>
       <nav class="nav collapsible">
         <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
@@ -31,13 +32,15 @@
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 data-aos="fade-right" class="block__heading">
+            Cloud Hosting for Pros
+          </h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds
           </p>
           <a href="" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -51,7 +54,7 @@
       </div>
     </section>
 
-    <section class="block container block__domain">
+    <section data-aos="fade-up" class="block container block__domain">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -81,7 +84,7 @@
       </ul>
     </section>
 
-    <section class="container block block-plans">
+    <section data-aos="fade-up" class="container block block-plans">
       <div class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -155,7 +158,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -168,7 +171,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -264,7 +267,7 @@
         <h2>User_friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture data-aos="fade-right" class="block-showcase__image">
           <source
             type="image/webp"
             srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
@@ -275,7 +278,7 @@
           />
           <img src="images/ipad.png" alt="" />
         </picture>
-        <ul class="list">
+        <ul data-aos="fade-up" class="list">
           <li>
             <div class="media">
               <div class="media__image">
@@ -331,7 +334,7 @@
       </div>
     </section>
 
-    <section class="block">
+    <section data-aos="zoom-in" class="block">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -376,7 +379,20 @@
         </div>
       </div>
     </section>
-
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Read to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos
+              numquam, mollitia dicta sapiente qui id esse ab sed placeat?
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
     <footer class="block block--dark footer">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expended footer__section">
@@ -448,5 +464,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
